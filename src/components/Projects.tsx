@@ -38,7 +38,7 @@ const Projects = () => {
         "Ensured consistent UI elements and clear visual hierarchy"
       ],
       gradient: "from-purple-400 to-pink-500",
-      link: "https://www.figma.com/design/u59njIJFbIjbJdoJi0IJ1y/Mobile--Login-Flow?node-id=0-1&t=RldRD3Ef2PLUMaZf-1"
+      link: "https://www.figma.com/design/e10WOzbCp0bklq12ufwk3y/Login-flow?node-id=0-1&t=whnHA8sYIM5DQdZy-1"
     },
     {
       id: 3,

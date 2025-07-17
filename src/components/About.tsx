@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Palette, Users, MessageCircle, Eye, Lightbulb } from "lucide-react";
+import { Users, MessageCircle, Eye, Lightbulb } from "lucide-react";
 
 const About = () => {
   const tools = ["Figma", "Canva", "Wix"];
@@ -21,8 +21,8 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto mb-8"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="space-y-6">
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="space-y-6 text-center">
             <p className="text-lg text-gray-700 leading-relaxed">
               I'm a passionate beginner UI/UX designer with a strong interest in creating clean, 
               intuitive digital experiences. I've been learning through hands-on projects in Figma, 
@@ -31,15 +31,6 @@ const About = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               I'm actively looking for a UI/UX design internship where I can contribute, grow, 
               and learn from real-world projects.
-            </p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-2xl">
-            <Palette className="h-12 w-12 text-purple-500 mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Design Philosophy</h3>
-            <p className="text-gray-700">
-              I believe great design is invisible. My focus is on creating user experiences that 
-              feel natural, intuitive, and delightful while solving real problems.
             </p>
           </div>
         </div>

@@ -23,11 +23,11 @@ const Contact = () => {
                 <Mail className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Email</h3>
-              <p className="text-purple-100 mb-4">niharika.sureddi2@gmail.com</p>
+              <p className="text-purple-100 mb-4">niharika.sureddi@gmail.com</p>
               <Button 
                 variant="outline" 
                 className="border-white/30 text-white hover:bg-white hover:text-purple-900 transition-all duration-300"
-                onClick={() => window.open('mailto:niharika.sureddi2@gmail.com')}
+                onClick={() => window.open('mailto:niharika.sureddi@gmail.com')}
               >
                 <Send className="mr-2 h-4 w-4" />
                 Send Email
@@ -41,11 +41,11 @@ const Contact = () => {
                 <Phone className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Phone</h3>
-              <p className="text-purple-100 mb-4">+91 9876543210</p>
+              <p className="text-purple-100 mb-4">+91 8309827641</p>
               <Button 
                 variant="outline" 
                 className="border-white/30 text-white hover:bg-white hover:text-purple-900 transition-all duration-300"
-                onClick={() => window.open('tel:+919876543210')}
+                onClick={() => window.open('tel:+918309827641')}
               >
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
@@ -63,7 +63,7 @@ const Contact = () => {
               <Button 
                 variant="outline" 
                 className="border-white/30 text-white hover:bg-white hover:text-purple-900 transition-all duration-300"
-                onClick={() => window.open('https://linkedin.com/in/yourprofile', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/in/niharika-sureddi-4a6166247/', '_blank')}
               >
                 <Linkedin className="mr-2 h-4 w-4" />
                 Connect
