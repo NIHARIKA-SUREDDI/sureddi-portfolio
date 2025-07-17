@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, Send, Heart } from "lucide-react";
+import { Mail, Linkedin, Send, Heart, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -16,7 +16,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
             <CardContent className="p-8 text-center">
               <div className="bg-gradient-to-br from-purple-400 to-blue-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -31,6 +31,24 @@ const Contact = () => {
               >
                 <Send className="mr-2 h-4 w-4" />
                 Send Email
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+            <CardContent className="p-8 text-center">
+              <div className="bg-gradient-to-br from-green-400 to-teal-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Phone</h3>
+              <p className="text-purple-100 mb-4">+91 9876543210</p>
+              <Button 
+                variant="outline" 
+                className="border-white/30 text-white hover:bg-white hover:text-purple-900 transition-all duration-300"
+                onClick={() => window.open('tel:+919876543210')}
+              >
+                <Phone className="mr-2 h-4 w-4" />
+                Call Now
               </Button>
             </CardContent>
           </Card>

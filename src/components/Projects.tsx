@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ExternalLink, Globe, Smartphone, UtensilsCrossed } from "lucide-react";
 
 const Projects = () => {
@@ -18,7 +19,8 @@ const Projects = () => {
         "Structured content for easy readability and user engagement",
         "Focused on clear navigation, strong CTAs, and visual consistency"
       ],
-      gradient: "from-green-400 to-blue-500"
+      gradient: "from-green-400 to-blue-500",
+      link: "https://salessupport69.wixsite.com/7s-sales-technolog-2"
     },
     {
       id: 2,
@@ -35,7 +37,8 @@ const Projects = () => {
         "Focused on seamless and secure user journey",
         "Ensured consistent UI elements and clear visual hierarchy"
       ],
-      gradient: "from-purple-400 to-pink-500"
+      gradient: "from-purple-400 to-pink-500",
+      link: "https://www.figma.com/design/u59njIJFbIjbJdoJi0IJ1y/Mobile--Login-Flow?node-id=0-1&t=RldRD3Ef2PLUMaZf-1"
     },
     {
       id: 3,
@@ -50,7 +53,8 @@ const Projects = () => {
         "Focused on minimal UI and clear CTAs",
         "Optimized for mobile-first experience"
       ],
-      gradient: "from-orange-400 to-red-500"
+      gradient: "from-orange-400 to-red-500",
+      link: "https://www.figma.com/design/F43F3Kl3t0HQE8sCjqUHM8/Food-delivery-App?node-id=0-1&t=r48ELA0b43QXwiHn-1"
     }
   ];
 
@@ -81,7 +85,14 @@ const Projects = () => {
                       </Badge>
                     </div>
                   </div>
-                  <ExternalLink className="h-6 w-6 opacity-70 group-hover:opacity-100 transition-opacity" />
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="text-white hover:bg-white/20 p-2"
+                    onClick={() => window.open(project.link, '_blank')}
+                  >
+                    <ExternalLink className="h-6 w-6" />
+                  </Button>
                 </div>
               </CardHeader>
               
@@ -102,7 +113,7 @@ const Projects = () => {
                   <p className="text-gray-700 leading-relaxed">{project.description}</p>
                 </div>
 
-                <div>
+                <div className="mb-6">
                   <h4 className="text-lg font-semibold text-gray-900 mb-3">What I Did:</h4>
                   <ul className="space-y-2">
                     {project.achievements.map((achievement, i) => (
@@ -112,6 +123,16 @@ const Projects = () => {
                       </li>
                     ))}
                   </ul>
+                </div>
+
+                <div className="pt-4 border-t border-gray-200">
+                  <Button
+                    className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white"
+                    onClick={() => window.open(project.link, '_blank')}
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    View Project
+                  </Button>
                 </div>
               </CardContent>
             </Card>
