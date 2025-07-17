@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, MessageCircle, Eye, Lightbulb } from "lucide-react";
+import { Palette, Users, MessageCircle, Eye, Lightbulb } from "lucide-react";
 
 const About = () => {
   const tools = ["Figma", "Canva", "Wix"];
@@ -21,8 +21,8 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto mb-8"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto mb-16">
-          <div className="space-y-6 text-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
               I'm a passionate beginner UI/UX designer with a strong interest in creating clean, 
               intuitive digital experiences. I've been learning through hands-on projects in Figma, 
@@ -33,7 +33,8 @@ const About = () => {
               and learn from real-world projects.
             </p>
           </div>
-        </div>
+          
+          
 
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
