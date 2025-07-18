@@ -70,14 +70,14 @@ const About = () => {
 
           <div className="bg-white p-4 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <h3 className="text-lg font-semibold text-gray-900 mb-4 text-center">Soft Skills</h3>
-            <div className="space-y-3">
+            <div className="grid grid-cols-2 gap-3">
               {softSkills.map((skill, index) => (
                 <div 
                   key={skill.name} 
-                  className="flex items-center gap-3 justify-center hover:scale-105 transition-transform duration-200"
+                  className="flex items-center gap-2 hover:scale-105 transition-transform duration-200"
                   style={{ animationDelay: `${0.4 + index * 0.1}s` }}
                 >
-                  <skill.icon className="h-4 w-4 text-cyan-500" />
+                  <skill.icon className="h-4 w-4 text-cyan-500 flex-shrink-0" />
                   <span className="text-gray-700 font-medium text-sm">{skill.name}</span>
                 </div>
               ))}
