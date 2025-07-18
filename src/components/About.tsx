@@ -33,8 +33,7 @@ const About = () => {
               and learn from real-world projects.
             </p>
           </div>
-          
-          
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
