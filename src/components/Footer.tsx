@@ -41,9 +41,9 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div className="text-center md:text-right">
+          <div className="text-center">
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
-            <div className="flex justify-center md:justify-end gap-4">
+            <div className="flex justify-center gap-4">
               <a 
                 href="mailto:niharika.sureddi@gmail.com" 
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors duration-200"
@@ -67,7 +67,7 @@ const Footer = () => {
             Made with <Heart className="h-4 w-4 text-red-500" /> by Niharika Sureddi
           </p>
           <p className="text-gray-500 text-sm mt-2">
-            © 2024 All rights reserved.
+            © 2025 All rights reserved.
           </p>
         </div>
       </div>
