@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Palette, Users, MessageCircle, Eye, Lightbulb } from "lucide-react";
+import { Users, MessageCircle, Eye, Lightbulb } from "lucide-react";
 
 const About = () => {
   const tools = ["Figma", "Canva", "Wix"];
@@ -36,45 +36,47 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                {tools.map((tool) => (
-                  <Badge key={tool} variant="secondary" className="bg-purple-100 text-purple-700 hover:bg-purple-200">
-                    {tool}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+          <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+            <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Tools</h3>
+            <div className="flex flex-wrap gap-3 justify-center">
+              {tools.map((tool) => (
+                <Badge 
+                  key={tool} 
+                  variant="secondary" 
+                  className="bg-purple-100 text-purple-700 hover:bg-purple-200 px-4 py-2 text-sm font-medium"
+                >
+                  {tool}
+                </Badge>
+              ))}
+            </div>
+          </div>
 
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Skills</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-blue-100 text-blue-700 hover:bg-blue-200">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+          <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+            <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Design Skills</h3>
+            <div className="flex flex-wrap gap-3 justify-center">
+              {skills.map((skill) => (
+                <Badge 
+                  key={skill} 
+                  variant="secondary" 
+                  className="bg-blue-100 text-blue-700 hover:bg-blue-200 px-4 py-2 text-sm font-medium"
+                >
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
 
-          <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Soft Skills</h3>
-              <div className="space-y-3">
-                {softSkills.map((skill) => (
-                  <div key={skill.name} className="flex items-center gap-3">
-                    <skill.icon className="h-4 w-4 text-cyan-500" />
-                    <span className="text-gray-700">{skill.name}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+          <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+            <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Soft Skills</h3>
+            <div className="space-y-4">
+              {softSkills.map((skill) => (
+                <div key={skill.name} className="flex items-center gap-3 justify-center">
+                  <skill.icon className="h-4 w-4 text-cyan-500" />
+                  <span className="text-gray-700 font-medium">{skill.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
